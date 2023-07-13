@@ -96,4 +96,4 @@ app.delete('/delete/:user_id/:content_id',async (req,res)=>{
 //     console.log(req.params.id2)
 //     res.send({result:"recieved"});
 // })
-app.listen(5000);
+app.listen(process.env.PORT);
