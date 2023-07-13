@@ -12,6 +12,9 @@ app.use(cors());
 app.use(express.urlencoded({extended:false}));
 
 
+app.get("/",(req,res)=>{
+    res.send("server is running ");
+})
 
 app.post("/register",async (req,res)=>{
     const user = new User(req.body);
